@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An online calculator.">
+    <meta name="keywords" content="calculator, office tool, calculation">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>ToolBox - Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo"><span class="letter">T</span>oolBox</a>
+            <div class="links">
+                <ul>
+                    <li><a href="./todolist.html">To do list</a></li>
+                    <li class="active"><a href="./calculator.html">Calculator</a></li>
+                    <li><a href="./timer.html">Timer</a></li>
+                </ul>
+            </div>
+            <img src="./img/menu.png" alt="Menu" class="menu_img">
+            <button id="btn_git">See it on GitHub</button>
+
+        </nav>
+    </header>
+
+    <section class="calculator">
+        <div class="screen"></div>
+        <div class="keybord">
+            <div class="key_one">
+                <button data-keycode="8" class="btn_calculator">C</button>
+                <button data-keycode="53" class="btn_calculator">(</button>
+                <button data-keycode="219" class="btn_calculator">)</button>
+                <button data-keycode="111" class="btn_calculator">/</button>
+            </div>
+
+            <div class="key_two">
+                <button data-keycode="103" class="btn_calculator">7</button>
+                <button data-keycode="104" class="btn_calculator">8</button>
+                <button data-keycode="105" class="btn_calculator">9</button>
+                <button data-keycode="106" class="btn_calculator">*</button>
+            </div>
+
+            <div class="key_three">
+                <button data-keycode="100" class="btn_calculator">4</button>
+                <button data-keycode="101" class="btn_calculator">5</button>
+                <button data-keycode="102" class="btn_calculator">6</button>
+                <button data-keycode="109" class="btn_calculator">-</button>
+            </div>
+
+            <div class="key_four">
+                <button data-keycode="97" class="btn_calculator">1</button>
+                <button data-keycode="98" class="btn_calculator">2</button>
+                <button data-keycode="99" class="btn_calculator">3</button>
+                <button data-keycode="107" class="btn_calculator">+</button>
+            </div>
+
+            <div class="key_five">
+                <button data-keycode="96" class="btn_calculator">0</button>
+                <button data-keycode="110" class="btn_calculator">.</button>
+                <button data-keycode="13" class="btn_calculator">=</button>
+            </div>
+        </div>
+
+    </section>
+    <footer> <a class="italic" href="#">See it on GitHub!</a></footer>
+
+    <script src="./js scripts/menu.js"></script>
+    <script src="./js scripts/calculator.js"></script>
+</body>
+
+</html>

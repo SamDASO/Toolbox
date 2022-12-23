@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An online to do list.">
+    <meta name="keywords" content="To do list, office tool, note">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>ToolBox - To do list</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo"><span class="letter">T</span>oolBox</a>
+            <div class="links">
+                <ul>
+                    <li class="active"><a href="./todolist.html">To do list</a></li>
+                    <li><a href="./calculator.html">Calculator</a></li>
+                    <li><a href="./timer.html">Timer</a></li>
+                </ul>
+            </div>
+            <img src="./img/menu.png" alt="Menu" class="menu_img">
+            <button id="btn_git">See it on GitHub</button>
+
+        </nav>
+    </header>
+
+    <section id="todolist_sec">
+        <form id="todolist_form">
+            <input autocomplete=off required value="" id="todolist_field" type="text" placeholder="Add a new task...">
+            <input type="submit" id="btn_todolist" value="+">
+        </form>
+
+        <div id="empty_todo">No current task.</div>
+
+        <div>
+            <ol id="ol_list"></ol>
+        </div>
+
+    </section>
+
+    <footer> <a class="italic" href="#">See it on GitHub!</a></footer>
+
+
+    <script src="./js scripts/menu.js"></script>
+    <script src="./js scripts/todolist.js"></script>
+</body>
+
+</html>

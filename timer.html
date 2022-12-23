@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An online timer.">
+    <meta name="keywords" content="Timer, office tool, stopwatch, chronometer, watch, online">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>ToolBox - Timer</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo"><span class="letter">T</span>oolBox</a>
+            <div class="links">
+                <ul>
+                    <li><a href="./todolist.html">To do list</a></li>
+                    <li><a href="./calculator.html">Calculator</a></li>
+                    <li class="active"><a href="./timer.html">Timer</a></li>
+                </ul>
+            </div>
+            <img src="./img/menu.png" alt="Menu" class="menu_img">
+            <button id="btn_git">See it on GitHub</button>
+
+        </nav>
+    </header>
+
+    <section class="watch_timer">
+        <div id="text_timer">
+            <h1 id="title_timer"> Stopwatch vs Timer :</h1><br />
+            <p id="description_timer">The stopwatch let you measure the time elapsed from the moment you press the
+                "start"
+                button until you press
+                the "stop" one. <br /> The timer can be used as a countdown. You specify the time you want to be counted
+                down and press "start".<br /><span class="italic">Both can be played at the same time.</span></p>
+        </div>
+        <article class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div class="time">
+                <span class="sw_mins">0 :</span>
+                <span class="sw_mins">0 :</span>
+                <span class="sw_mins">0 :</span>
+                <span class="sw_mins">0</span>
+            </div>
+
+            <div class="controls">
+                <button id="sw_start" onclick="start()">Start</button>
+                <button id="sw_stop" onclick="stop()">Stop</button>
+                <button id="sw_reset" onclick="reset()">Reset</button>
+            </div>
+
+        </article>
+
+        <article class="timer">
+            <h2>Timer</h2>
+            <div class="time">
+                <input id="t_hour" type="number" max="99" min="0" value="0" class="t_mins">
+                <p class="semicolon">h</p>
+                <input id="t_minute" type="number" max="59" min="0" value="5" class="t_mins">
+                <p class="semicolon">min</p>
+                <input id="t_second" type="number" max="59" min="0" value="0" class="t_mins">
+                <p class="semicolon">s</p>
+            </div>
+
+            <div class="controls">
+                <button id="t_start">Start</button>
+                <button id="t_pause">Pause</button>
+                <button id="t_stop">Stop</button>
+                <button id="t_reset">Reset</button>
+            </div>
+        </article>
+    </section>
+
+    <footer> <a class="italic" href="#">See it on GitHub!</a></footer>
+
+    <script src="./js scripts/menu.js"></script>
+    <script src="./js scripts/stopwatch.js"></script>
+    <script src="./js scripts/timer.js"></script>
+</body>
+
+</html>
