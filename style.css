@@ -543,7 +543,7 @@ footer {
     }
 
     #todolist_field {
-        max-width: 400px;
+        max-width: 300px;
         height: 30px;
     }
 
@@ -632,7 +632,7 @@ footer {
     }
 
     section.calculator {
-        width: 100px;
+        width: 150px;
         margin: 150px auto 10px auto;
     }
 
