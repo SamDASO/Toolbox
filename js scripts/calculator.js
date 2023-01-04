@@ -12,7 +12,7 @@ const calculation = (valeur) => {
     if (listKeyCode.includes(valeur)) {
         switch (valeur) {
             case '8':
-                screen.textContent = "";
+                screen.innerHTML = "";
                 break;
             case '13':
                 const calcul = eval(screen.textContent)
@@ -21,7 +21,7 @@ const calculation = (valeur) => {
             default:
                 const indexKeycode = listKeyCode.indexOf(valeur);
                 const key = keys[indexKeycode];
-                screen.textContent += key.innerHTML;
+                screen.innerHTML += key.innerHTML;
 
         }
     }
